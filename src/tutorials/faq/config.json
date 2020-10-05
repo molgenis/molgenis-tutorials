@@ -1,0 +1,33 @@
+{
+  "slides": [
+    {
+      "name": "FirstSlide",
+      "title": "EMX: Frequently Asked Questions",
+      "isFirst": true
+    },
+    {
+      "name": "MetadataSlide",
+      "title": "Metadata issues"
+    },
+    {
+      "name": "AttributesSlide",
+      "title": "Attributes issues",
+      "steps": 7
+    },
+    {
+      "name": "EntitiesPkgsSlide",
+      "title": "Entities and packages issues",
+      "steps": 2
+    },
+    {
+      "name": "DataSlide",
+      "title": "Data issues",
+      "steps": 15
+    },
+    {
+      "name": "EndSlide",
+      "title": "Summary",
+      "isLast": true
+    }
+  ]
+}

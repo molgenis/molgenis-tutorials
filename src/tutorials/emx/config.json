@@ -1,0 +1,47 @@
+{
+  "slides": [
+    {
+      "name": "first-slide",
+      "title": "EMX",
+      "isFirst": true
+    },
+    {
+      "name": "emx-slide",
+      "title": "EMX",
+      "steps": 2
+    },
+    {
+      "name": "structure-slide",
+      "title": "Main file structure"
+    },
+    {
+      "name":  "packages-slide",
+      "title": "Packages"
+    },
+    {
+      "name":  "entities-slide",
+      "title": "Entities",
+      "steps": 2
+    },
+    {
+      "name":  "attributes-slide",
+      "title": "Attributes",
+      "steps": 2
+    },
+    {
+      "name":  "datatypes-slide",
+      "title": "Datatypes",
+      "steps": 7
+    },
+    {
+      "name":  "create-table-slide",
+      "title": "Create Table",
+      "steps": 3
+    },
+    {
+      "name":  "end-slide",
+      "title": "Summary",
+      "isLast": true
+    }
+  ]
+}
