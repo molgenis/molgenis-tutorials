@@ -72,12 +72,12 @@
                           ['something', 'Something else', 'table', '']]"/>
           </div>
           <div class="col-sm-3">
-            <molgenis-table title="Entites: package is set"
+            <molgenis-table title="Entities: package is set"
                             :header="['name', 'package', 'label']"
                             :data="[['table', 'demo', 'Table']]"/>
           </div>
           <div class="col-sm-3">
-            <molgenis-table title="Entites: package is set"
+            <molgenis-table title="Entities: package is set"
                             :header="['name', 'label']"
                             :data="[['demo', 'Demo']]"/>
           </div>
@@ -107,10 +107,16 @@
                         :data="[['id', 'ID', 'table', 'TRUE'],
                           ['label', 'Label', 'table', ''],
                           ['something', 'Something else', 'table', '']]"/>
-        <p>To upload this, you need to have a package available, you can do this either by creating one in the
-          <code>navigator</code>, or by creating it using another EMX file. If you have no package available, you will
-          receive this error:</p>
-        <img src="@/assets/no_pkg.png" alt="Error no pkg"/>
+        <div class="row">
+          <div class="col-7">
+            <p>To upload this, you need to have an available package, you can either create one in the
+              <code>navigator</code>, or in another EMX file. If you have no package available, you will
+              receive the error as shown on the right.</p>
+          </div>
+          <div class="col-5">
+            <img src="@/assets/no_pkg.png" alt="Error no pkg"/>
+          </div>
+        </div>
       </div>
     </div>
     <div v-if="step === 7">
@@ -122,8 +128,14 @@
                           ['label', 'Label', 'table', ''],
                           ['2something', 'Something else', 'table', '']]"/>
 
-      <p>You will receive this error:</p>
-      <img src="@/assets/number_attr_error.png" alt="error"/>
+      <div class="row">
+        <div class="col-3">
+          <p>You will receive an error:</p>
+        </div>
+        <div class="col-9">
+          <img src="@/assets/number_attr_error.png" alt="error"/>
+        </div>
+      </div>
       <p>To fix it, remove the number in front of the name.</p>
     </div>
     <!-- Leave this last div!-->

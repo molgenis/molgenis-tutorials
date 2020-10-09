@@ -56,7 +56,7 @@
           <div class="row">
             <div class="col-12">
               <molgenis-table title="demo_ref" :header="['id', 'label']"
-                              :data="[['ref1', 'Item 1'],['ref1', 'Item 2']]"/>
+                              :data="[['ref1', 'Item 1'],['ref2', 'Item 2']]"/>
             </div>
             <div class="col-12">
               <molgenis-table title="demo_example" :header="['id', 'label', 'ref']"
@@ -125,20 +125,21 @@
         </div>
       </div>
       <div v-if="step===8">
-        <p>Now you upload the following dataset using <code>add/update</code> to update your data:</p>
         <div class="row">
-          <div class="col">
+          <div class="col-8">
+            <p>Now you upload the following dataset using <code>add/update</code> to update your data:</p>
             <molgenis-table title="demo_example" :header="['label', 'ref']"
                             :data="[['Row 1', 'ref1,ref2'], ['Row 2', 'ref3'], ['Row 3', 'ref2']]"/>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-7 col-md-5 col-xl-4">
+          <div class="col-4">
+            <p>The result:</p>
             <molgenis-img title="Your first lines are duplicated">
               <img src="@/assets/auto_id_upload2.png" class="mg-auto-id" alt="MOLGENIS preview"/>
             </molgenis-img>
           </div>
-          <div class="col-xs-12 col-sm-5 col-md-7 col-xl-8">
+        </div>
+        <div class="row">
+          <div class="col-12">
             <p>There are two possible solutions:</p>
             <ul>
               <li>1. First download your data and add the new rows to that file to update the data</li>
