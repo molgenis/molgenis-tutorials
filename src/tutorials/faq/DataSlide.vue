@@ -38,9 +38,8 @@
     </div>
     <div v-if="step === 3">
       <h3>Irregular casing</h3>
-      <p>MOLGENIS is, as many applications, case sensitive. This means that you have to use the same casing throughout
-        all
-        your data. An example:</p>
+      <p>MOLGENIS is case sensitive. This means that you have to use the same casing throughout
+        all your data. An example:</p>
       <div class="row">
         <div class="col-lg-3 col-sm-5">
           <molgenis-table title="Attributes"
@@ -62,15 +61,17 @@
               <molgenis-table title="demo_example" :header="['id', 'label', 'ref']"
                               :data="[['id1', 'label 1', 'Ref1']]"/>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>When you upload this, you will get the following error:</p>
-                <molgenis-img title="The reference in demo_example should be lowercase: ref1">
-                  <img src="@/assets/ref_doesnt_exist.png" alt="error" class="mg-error"/>
-                </molgenis-img>
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>When you upload this, you will get the following error:</p>
+        </div>
+        <div class="col-md-6">
+          <molgenis-img title="The reference in demo_example should be lowercase: ref1">
+            <img src="@/assets/ref_doesnt_exist.png" alt="error" class="mg-error"/>
+          </molgenis-img>
         </div>
       </div>
     </div>
@@ -151,9 +152,9 @@
     </div>
     <div v-if="step===9">
       <h3>Case 3: Misspelling IDs</h3>
-      <p>The table you are uploading looks like this:</p>
       <div class="row">
         <div class="col-xs-4 col-md-6">
+          <p>The table you are uploading looks like this:</p>
           <molgenis-table title="demo_example"
                           :header="['id', 'label', 'ref']"
                           :data="[['abc1', 'Row 1', 'ref1,ref2'],['abc2', 'Row 2', 'ref3']]"/>
@@ -164,9 +165,10 @@
           </molgenis-img>
         </div>
       </div>
-      <p>You want to update your data, so you upload the following:</p>
+
       <div class="row">
         <div class="col-xs-4 col-md-6">
+          <p>You want to update your data, so you upload the following:</p>
           <molgenis-table title="demo_example update"
                           :header="['id', 'label', 'ref']"
                           :data="[['ABC1', 'Row 1', 'ref1,ref2'],['abc 2', 'Row 2', 'ref3']]"/>
@@ -178,7 +180,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="offset-md-2 col-md-10 col-sm-12">
+        <div class="col-sm-12">
           <p>Make sure you are using exactly the same IDs if you want to update your rows.</p>
         </div>
       </div>
@@ -210,7 +212,6 @@
           </molgenis-img>
         </div>
       </div>
-      <br/><br/>
       <p>In this case we uploaded a capitalised table name. Since MOLGENIS is case sensitive, it doesn't recognise the
         table name. Simply fix the name by making it lowercase and upload your file again.</p>
     </div>
@@ -313,7 +314,7 @@ export default {
   }
 
   .mg-error {
-    max-width: 40rem;
+    max-width: 30rem;
     width: 100%;
   }
 

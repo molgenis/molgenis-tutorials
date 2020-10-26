@@ -2,7 +2,7 @@
   <div>
     <div v-if="step === 1">
       <p>Open the <code>Advanced importer</code> by clicking it in the menu. Using the default MOLGENIS layout, you can
-      find it here: </p>
+        find it here: </p>
       <img v-if="this.windowWidth > 989" class="mg-menu" src="@/assets/importer_menu.png" alt="menu"/>
       <img v-if="this.windowWidth < 990" class="mg-menu-sm" src="@/assets/importer_menu_small.png" alt="menu"/>
     </div>
@@ -23,8 +23,10 @@
           <img src="@/assets/import_options.png" alt="Options" class="import-options"/>
         </div>
         <div class="col-lg-7 col-sm-6" v-if="step=== 3">
-          <img v-if="this.windowWidth < 576 " src="@/assets/import_md_options.png" alt="Options"/>
+          <span v-if="this.windowWidth < 576">
+            <img src="@/assets/import_md_options.png" alt="Options"/>
           <hr/>
+          </span>
           <h4>Step 2 Metadata options</h4>
           <p> Select <code>Create new metadata</code> (make a new table given the EMX you are uploading).</p>
           <p><code>Ignore the metadata</code> will ignore the model you specify and upload the data if the table
@@ -32,8 +34,10 @@
             provide it, so your upload might still fail if you provide incorrect metadata.</p>
         </div>
         <div class="col-lg-7 col-sm-6" v-if="step=== 4">
-          <img v-if="this.windowWidth < 576" src="@/assets/import_data_options.png" alt="Options"/>
-          <hr/>
+          <span v-if="this.windowWidth < 576">
+            <img src="@/assets/import_data_options.png" alt="Options"/>
+            <hr/>
+          </span>
           <h4>Step 3 Data options</h4>
           <p>
             Select <code>Add entities</code> (this only adds rows to the table and fails if you try to update rows)
@@ -55,9 +59,9 @@
         <div class="col-md-5">
           <h4>Step 4</h4>
           <p>Since we already put every entity in a package in our EMX file, this screen is pretty empty. If you don't
-          include the <code>entities</code> sheets in your EMX, you have to specify the packages
-          here. Obviously, there have to be packages available. If you do not provide the <code>packages</code> sheet,
-          you have to make sure you have an available package. </p>
+            include the <code>entities</code> sheets in your EMX, you have to specify the packages
+            here. Obviously, there have to be packages available. If you do not provide the <code>packages</code> sheet,
+            you have to make sure you have an available package. </p>
           <p> You can press next again. </p>
         </div>
       </div>
@@ -71,8 +75,8 @@
           <h4>Step 5</h4>
           <p> In this step the data you are uploading will be compared to its metadata. If anything does not match, it
             will show here. </p>
-          <p> <code>Unknown</code> means that a column provided is not specified in the metadata. </p>
-          <p> <code>Available</code> means that a column specified in the metadata is not present in the data. If the
+          <p><code>Unknown</code> means that a column provided is not specified in the metadata. </p>
+          <p><code>Available</code> means that a column specified in the metadata is not present in the data. If the
             column is not required, your upload might still succeed. </p>
           <p> Everything is green, so you can press next again. </p>
         </div>
@@ -106,7 +110,7 @@
 <script>
 export default {
   name: 'importer-slide',
-  props: { step: Number },
+  props: {step: Number},
   data () {
     return {
       windowWidth: 0
@@ -130,27 +134,25 @@ export default {
 </script>
 
 <style scoped>
-  img.mg-menu {
-    max-width: 30rem;
-  }
+img.mg-menu {
+  max-width: 25rem;
+}
 
-  img.mg-menu-sm {
-    width: 100%;
-    max-width: 40rem;
-  }
+img.mg-menu-sm {
+  width: 100%;
+  max-width: 30rem;
+}
 
-  img.import {
-    max-width: 100%;
-    width: 48.5rem;
-  }
+img.import {
+  width: 80%;
+}
 
-  img.import-options {
-    max-width: 100%;
-    width: 25rem;
-  }
+img.import-options {
+  width: 90%;
+}
 
-  img.import-validation {
-    max-width: 100%;
-    width: 60rem;
-  }
+img.import-validation {
+  max-width: 100%;
+  width: 60rem;
+}
 </style>

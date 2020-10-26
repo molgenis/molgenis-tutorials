@@ -1,7 +1,7 @@
 <template>
   <div>
     <p> In this tutorial you learned: </p>
-    <ul class="ml-5">
+    <ul>
       <li>What happens when you forget the id or label attribute</li>
       <li>How you should select a package</li>
       <li>That attribute names cannot start with numbers</li>

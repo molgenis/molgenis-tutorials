@@ -13,7 +13,6 @@
       <p>It happens to everyone, you forgot to specify the id attribute of your table. You will receive this error in
         the <code>options</code> section:</p>
       <img src="@/assets/missing_id.png" alt="Error missing id"/>
-      <hr />
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <molgenis-table
@@ -41,7 +40,6 @@
         attribute becomes mandatory. If you don't set it, you will receive the following error in the
         <code>options</code> section:</p>
       <img src="@/assets/missing_label.png" alt="Error missing label"/>
-      <hr/>
       <div class="row">
         <div class="col-lg-10 col-xl-12 offset-lg-2 offset-xl-0">
           <molgenis-table title="The fix is easy: find a column that you want to represent the values in your table and set

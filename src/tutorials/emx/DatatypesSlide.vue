@@ -59,7 +59,7 @@
     </div>
     <div class="row" v-if="step > 2 && step < 6">
       <div class="col-md-9 col-lg-8">
-        <p v-if="step > 2 && step < 6">
+        <p>
           First we determine the data types of the subjects table.
         </p>
         <molgenis-table class="mg-subjects" title="Subjects" :data="[
@@ -67,8 +67,7 @@
             [3, 'F', 53, 56, 160, 'Indomethacin'], [4, 'F', 45, 70, 175, 'Indomethacin'],
             [5, 'M', 48, 79, 190, 'Indomethacin'], [6, 'M', 49, 70, 185, 'Indomethacin'],
             ['int', 'categorical', 'int', 'int', 'int', 'categorical']]"
-                        :header="['id', 'sex', 'age', 'weight', 'height', 'drug']"
-                        v-if="step > 2 && step < 6"/>
+                        :header="['id', 'sex', 'age', 'weight', 'height', 'drug']"/>
       </div>
       <div class="col-md-3 col-lg-4">
         <div v-if='step === 4'>
