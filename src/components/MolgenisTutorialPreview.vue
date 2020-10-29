@@ -35,7 +35,7 @@
 <script>
 export default {
   name: 'molgenis-tutorial-preview',
-  props: {tutorials: Array},
+  props: { tutorials: Array },
   data: function () {
     return {
       isVisible: false,

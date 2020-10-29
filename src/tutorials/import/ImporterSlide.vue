@@ -110,7 +110,7 @@
 <script>
 export default {
   name: 'importer-slide',
-  props: {step: Number},
+  props: { step: Number },
   data () {
     return {
       windowWidth: 0
