@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "name": "first-slide",
+      "title": "Import table",
+      "isFirst": true
+    },
+    {
+      "name": "importer-slide",
+      "title": "Importer",
+      "steps": 8
+    },
+    {
+      "name": "end-slide",
+      "title": "summary",
+      "isLast": true
+    }
+  ]
+}
